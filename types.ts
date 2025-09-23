@@ -19,6 +19,7 @@ export interface Medicine {
   frequency: Frequency;
   dayOfWeek?: number; // 0 (Sun) - 6 (Sat), only for weekly
   adherence: { [date: string]: AdherenceStatus }; // key is "YYYY-MM-DD"
+  snoozedUntil?: number; // timestamp
 }
 
 export interface User {

@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Medicine, Frequency, AdherenceStatus } from '../types';
+import { Medicine, Frequency } from '../types';
 import { recognizeMedicineFromImage } from '../services/geminiService';
 
 interface AddMedicineModalProps {
@@ -28,12 +28,14 @@ const AddMedicineModal: React.FC<AddMedicineModalProps> = ({ medicine, onClose, 
   const [dayOfWeek, setDayOfWeek] = useState(medicine?.dayOfWeek || 0);
   const [ocrLoading, setOcrLoading] = useState(false);
   const [ocrError, setOcrError] = useState('');
+  const [ocrResult, setOcrResult] = useState<{name: string, description: string} | null>(null);
 
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       const file = e.target.files[0];
       const base64 = await fileToBase64(file);
       setPhoto(base64);
+      setOcrResult(null); // Clear previous OCR result if a new photo is chosen
     }
   };
 
@@ -48,14 +50,26 @@ const AddMedicineModal: React.FC<AddMedicineModalProps> = ({ medicine, onClose, 
         const mimeType = photo.substring(photo.indexOf(':') + 1, photo.indexOf(';'));
         const base64Data = photo.split(',')[1];
         const { name: recognizedName, description: recognizedDescription } = await recognizeMedicineFromImage(base64Data, mimeType);
-        setName(recognizedName);
-        setDescription(recognizedDescription);
+        setOcrResult({ name: recognizedName, description: recognizedDescription });
     } catch (error) {
         setOcrError(error instanceof Error ? error.message : "An unknown error occurred.");
     } finally {
         setOcrLoading(false);
     }
   }, [photo]);
+
+  const handleConfirmOcr = () => {
+    if (ocrResult) {
+        setName(ocrResult.name);
+        setDescription(ocrResult.description);
+    }
+    setOcrResult(null);
+  };
+
+  const handleDiscardOcr = () => {
+    setOcrResult(null);
+  };
+
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -79,7 +93,7 @@ const AddMedicineModal: React.FC<AddMedicineModalProps> = ({ medicine, onClose, 
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
-      <div className="bg-white rounded-lg shadow-2xl w-full max-w-lg p-6 animate-fade-in-up">
+      <div className="bg-white rounded-lg shadow-2xl w-full max-w-lg p-6 animate-fade-in-up transition-all">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-2xl font-bold text-text-primary">{medicine ? 'Edit Medicine' : 'Add New Medicine'}</h2>
           <button onClick={onClose} className="text-gray-400 hover:text-gray-600">
@@ -116,7 +130,39 @@ const AddMedicineModal: React.FC<AddMedicineModalProps> = ({ medicine, onClose, 
                 </button>
             </div>
           </div>
-          {ocrError && <p className="text-red-500 text-sm">{ocrError}</p>}
+          {ocrError && <p className="text-red-500 text-sm text-center mt-2">{ocrError}</p>}
+          
+          {ocrResult && (
+            <div className="mt-4 p-4 border rounded-lg bg-gray-50 space-y-3 transition-all">
+                <h3 className="text-lg font-semibold text-text-primary">Confirm AI Result</h3>
+                <p className="text-sm text-text-secondary">Please review and edit the recognized details below before confirming.</p>
+                <div>
+                    <label htmlFor="ocr-name" className="block text-sm font-medium text-text-secondary">Medicine Name</label>
+                    <input 
+                        type="text" 
+                        id="ocr-name" 
+                        value={ocrResult.name}
+                        onChange={(e) => setOcrResult(prev => prev ? {...prev, name: e.target.value} : null)}
+                        className="mt-1 block w-full px-3 py-2 bg-white border border-accent rounded-md shadow-sm focus:outline-none focus:ring-accent focus:border-accent"
+                    />
+                </div>
+                <div>
+                    <label htmlFor="ocr-description" className="block text-sm font-medium text-text-secondary">Description</label>
+                    <textarea 
+                        id="ocr-description" 
+                        value={ocrResult.description}
+                        onChange={(e) => setOcrResult(prev => prev ? {...prev, description: e.target.value} : null)}
+                        rows={3}
+                        className="mt-1 block w-full px-3 py-2 bg-white border border-accent rounded-md shadow-sm focus:outline-none focus:ring-accent focus:border-accent"
+                    />
+                </div>
+                <div className="flex justify-end space-x-2 pt-2">
+                    <button type="button" onClick={handleDiscardOcr} className="bg-gray-200 text-text-secondary font-semibold py-2 px-4 rounded-lg hover:bg-gray-300 text-sm">Discard</button>
+                    <button type="button" onClick={handleConfirmOcr} className="bg-success text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-600 text-sm">Confirm & Use</button>
+                </div>
+            </div>
+          )}
+
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-text-secondary">Medicine Name</label>
             <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} required className="mt-1 block w-full px-3 py-2 bg-background border border-accent rounded-md shadow-sm focus:outline-none focus:ring-accent focus:border-accent" />

@@ -33,6 +33,7 @@ self.addEventListener('message', (event) => {
       // Define actions that the user can take directly from the notification.
       actions: [
         { action: 'take-action', title: 'I\'ve Taken It' },
+        { action: 'snooze-action', title: 'Snooze (15 min)' },
         { action: 'miss-action', title: 'Skip for Now' },
       ],
     };
@@ -46,13 +47,18 @@ self.addEventListener('message', (event) => {
 // Listen for clicks on the notification itself or its action buttons.
 self.addEventListener('notificationclick', (event) => {
   const medicineId = event.notification.data.medicineId;
-  let status;
+  let messageType;
+  let payload = { medicineId };
 
   // Determine the adherence status based on the action clicked.
   if (event.action === 'take-action') {
-    status = 'Taken';
+    messageType = 'ADHERENCE_UPDATE';
+    payload.status = 'Taken';
   } else if (event.action === 'miss-action') {
-    status = 'Missed';
+    messageType = 'ADHERENCE_UPDATE';
+    payload.status = 'Missed';
+  } else if (event.action === 'snooze-action') {
+    messageType = 'SNOOZE_UPDATE';
   } else {
     // If the user clicks the body of the notification, just close it.
     event.notification.close();
@@ -72,8 +78,8 @@ self.addEventListener('notificationclick', (event) => {
       }
       clients.forEach((client) => {
         client.postMessage({
-          type: 'ADHERENCE_UPDATE',
-          payload: { medicineId, status },
+          type: messageType,
+          payload: payload,
         });
       });
     })

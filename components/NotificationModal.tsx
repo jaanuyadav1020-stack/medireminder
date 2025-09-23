@@ -5,9 +5,10 @@ interface NotificationModalProps {
   medicine: Medicine;
   onClose: () => void;
   onConfirm: (medicineId: string, status: AdherenceStatus) => void;
+  onSnooze: (medicineId: string) => void;
 }
 
-const NotificationModal: React.FC<NotificationModalProps> = ({ medicine, onClose, onConfirm }) => {
+const NotificationModal: React.FC<NotificationModalProps> = ({ medicine, onClose, onConfirm, onSnooze }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50 p-4" onClick={onClose}>
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-sm p-6 text-center animate-fade-in-up transform transition-all" onClick={(e) => e.stopPropagation()}>
@@ -36,6 +37,12 @@ const NotificationModal: React.FC<NotificationModalProps> = ({ medicine, onClose
             className="w-full bg-success text-white font-bold py-3 px-4 rounded-lg hover:bg-green-600 transition-transform transform hover:scale-105"
           >
             I've Taken It
+          </button>
+          <button
+            onClick={() => onSnooze(medicine.id)}
+            className="w-full bg-secondary text-white font-semibold py-2 px-4 rounded-lg hover:bg-primary"
+          >
+            Snooze (15 min)
           </button>
           <button
             onClick={() => onConfirm(medicine.id, AdherenceStatus.Missed)}

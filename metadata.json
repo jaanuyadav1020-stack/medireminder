@@ -1,5 +1,5 @@
 {
-  "name": "Medirem: Medicine Reminder",
+  "name": "Copy of Medirem: Medicine Reminder",
   "description": "An intelligent medicine reminder application that helps users schedule and track their medication intake. Features include photo-based medicine recognition (OCR), adherence tracking, and customizable alarms.",
   "requestFramePermissions": [
     "camera"
