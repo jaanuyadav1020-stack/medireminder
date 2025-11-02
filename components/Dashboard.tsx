@@ -4,9 +4,7 @@ import Header from './Header';
 import MedicineList from './MedicineList';
 import AddMedicineModal from './AddMedicineModal';
 import NotificationModal from './NotificationModal';
-
-const ALARM_SOUND = 'data:audio/wav;base64,UklGRqAOAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YYgOAAAABAAAAgABAAMAAwACAAQABQAFAAQABgAHAAcABgAIAAkACQAIAAoACwALAAoADAAOAA4ADQAPABAAEAAPABEAEgASABEAEwAUABQAEwAVABYAFgAVABcAGAAXABkAGgAaABkAGwAcABwAGwAdAB4AHgAdAB8AIAAgAB8AIQAiACIAIQAjACQAJAAjACUAJgAmACUAJwAoACgAJwApACoAKgApACsALAAsACsALQAuAC4ALQAvADEAMQAwADMANAA0ADMBNgE3ATYBNwE4ATgBNwE5AToBOgE5ATsBPAE8ATsBPQE+AT4BPwFAAUIBQgFAAkAEgASAA0AFAAWABYAFAAZABwAHAAZAB0AHwAfAB0AIAAiACIAIQAjACUAJQAjACYAJwAnACYAJwAoACkAKQAnACoALAAsACoALQAwAC8ALgAxADMANAA0ADMANQE3ATcBNgE5ATsBOwE5ATwBPgE+ATwBPwFBAUEBPwFBAUMBRQFDAUMBRgFIAUgBRgFJAUwBTAFJAUsBTwFPB6gOAAEAAgADAAIABAAFAAUABAAFAAYABgAFAAYABwAHAAgACAAHAAgACQAJAAoACgAJAAoACwALAAwADQANAAwADgAOAA4ADwAQABAADwARABEAEQASABMAEgATABQAFQAUABUAFAAVABYAFwAWABcAFgAXABgAGgAYABkAFwAaABsAGwAaABwAHgAdAB0AHQAfACEAIAAhACIAIwAjACIAJAAmACYAJQAjACUAJwApACgAKAAqACwALAArAC0ALwAvAC0ALwAxADMALgAwADYANgA0ADcANwA0ADYBOQA5ADYBOgA7ADsAOQA9AD4APgA8AD8AQQBBAUEBQwFDAUEBQwFEAUYBRQFGAYoN/v8A/v8AAAEAAQABAAEAAQACAAMAAwACAAQABQAFAAQABgAHAAcABgAIAAkACQAIAAoACwALAAoADAAOAA4ADQAPABAAEAAPABEAEgASABEAEwAUABQAEwAVABYAFgAVABcAGAAXABkAGgAaABkAGwAcABwAGwAdAB4AHgAdAB8AIAAgAB8AIQAiACIAIQAjACQAJAAjACUAJgAmACUAJwAoACgAJwApACoAKgApACsALAAsACsALQAuAC4ALQAvADEAMQAwADMANAA0ADMANgE3ATYBNwE4ATgBNwE5AToBOgE5ATsBPAE8ATsBPQE+AT4BPwFAAUIBQgFAAkAEgASAA0AFAAWABYAFAAZABwAHAAZAB0AHwAfAB0AIAAiACIAIQAjACUAJQAjACYAJwAnACYAJwAoACkAKQAnACoALAAsACoALQAwAC8ALgAxADMANAA0ADMANQE3ATcBNgE5ATsBOwE5ATwBPgE+ATwBPwFBAUEBPwFBAUMBRQFDAUMBRgFIAUgBRgFJAUwBTAFJAUsBTwFPB6gOAAEAAgADAAIABAAFAAUABAAFAAYABgAFAAYABwAHAAgACAAHAAgACQAJAAoACgAJAAoACwALAAwADQANAAwADgAOAA4ADwAQABAADwARABEAEQASABMAEgATABQAFQAUABUAFAAVABYAFwAWABcAFgAXABgAGgAYABkAFwAaABsAGwAaABwAHgAdAB0AHQAfACEAIAAhACIAIwAjACIAJAAmACYAJQAjACUAJwApACgAKAAqACwALAArAC0ALwAvAC0ALwAxADMALgAwADYANgA0ADcANwA0ADYBOQA5ADYBOgA7ADsAOQA9AD4APgA8AD8AQQBBAUEBQwFDAUEBQwFEAUYBRQFGAYoN/v8A/v8AAAEAAQABAAEAAQACAAMAAwACAAQABQAFAAQABgAHAAcABgAIAAkACQAIAAoACwALAAoADAAOAA4ADQAPABAAEAAPABEAEgASABEAEwAUABQAEwAVABYAFgAVABcAGAAXABkAGgAaABkAGwAcABwAGwAdAB4AHgAdAB8AIAAgAB8AIQAiACIAIQAjACQAJAAjACUAJgAmACUAJwAoACgAJwApACoAKgApACsALAAsACsALQAuAC4ALQAvADEAMQAwADMANAA0ADMANgE3ATYBNwE4ATgBNwE5AToBOgE5ATsBPAE8ATsBPQE+AT4BPwFAAUIBQgFAAkAEgASAA0AFAAWABYAFAAZABwAHAAZAB0AHwAfAB0AIAAiACIAIQAjACUAJQAjACYAJwAnACYAJwAoACkAKQAnACoALAAsACoALQAwAC8ALgAxADMANAA0ADMANQE3ATcBNgE5ATsBOwE5ATwBPgE+ATwBPwFBAUEBPwFBAUMBRQFDAUMBRgFIAUgBRgFJAUwBTAFJAUsBTwFPB6gOAAEAAgADAAIABAAFAAUABAAFAAYABgAFAAYABwAHAAgACAAHAAgACQAJAAoACgAJAAoACwALAAwADQANAAwADgAOAA4ADwAQABAADwARABEAEQASABMAEgATABQAFQAUABUAFAAVABYAFwAWABcAFgAXABgAGgAYABkAFwAaABsAGwAaABwAHgAdAB0AHQAfACEAIAAhACIAIwAjACIAJAAmACYAJQAjACUAJwApACgAKAAqACwALAArAC0ALwAvAC0ALwAxADMALgAwADYANgA0ADcANwA0ADYBOQA5ADYBOgA7ADsAOQA9AD4APgA8AD8AQQBBAUEBQwFDAUEBQwFEAUYBRQFGAYoN/v8A/v8AAAEAAQABAAEAAQACAAMAAwACAAQABQAFAAQABgAHAAcABgAIAAkACQAIAAoACwALAAoADAAOAA4ADQAPABAAEAAPABEAEgASABEAEwAUABQAEwAVABYAFgAVABcAGAAXABkAGgAaABkAGwAcABwAGwAdAB4AHgAdAB8AIAAgAB8AIQAiACIAIQAjACQAJAAjACUAJgAmACUAJwAoACgAJwApACoAKgApACsALAAsACsALQAuAC4ALQAvADEAMQAwADMANAA0ADMANgE3ATYBNwE4ATgBNwE5AToBOgE5ATsBPAE8ATsBPQE+AT4BPwFAAUIBQgFAAkAEgASAA0AFAAWABYAFAAZABwAHAAZAB0AHwAfAB0AIAAiACIAIQAjACUAJQAjACYAJwAnACYAJwAoACkAKQAnACoALAAsACoALQAwAC8ALgAxADMANAA0ADMBNQE3ATcBNgE5ATsBOwE5ATwBPgE+ATwBPwFBAUEBPwFBAUMBRQFDAUMBRgFIAUgBRgFJAUwBTAFJAUsBTwFPB6gOAAEAAgADAAIABAAFAAUABAAFAAYABgAFAAYABwAHAAgACAAHAAgACQAJAAoACgAJAAoACwALAAwADQANAAwADgAOAA4ADwAQABAADwARABEAEQASABMAEgATABQAFQAUABUAFAAVABYAFwAWABcAFgAXABgAGgAYABkAFwAaABsAGwAaABwAHgAdAB0AHQAfACEAIAAhACIAIwAjACIAJAAmACYAJQAjACUAJwApACgAKAAqACwALAArAC0ALwAvAC0ALwAxADMALgAwADYANgA0ADcANwA0ADYBOQA5ADYBOgA7ADsAOQA9AD4APgA8AD8AQQBBAUEBQwFDAUEBQwFEAUYBRQFGAYoN/v8A/v8AAAEAAQABAAEAAQACAAMAAwACAAQABQAFAAQABgAHAAcABgAIAAkACQAIAAoACwALAAoADAAOAA4ADQAPABAAEAAPABEAEgASABEAEwAUABQAEwAVABYAFgAVABcAGAAXABkAGgAaABkAGwAcABwAGwAdAB4AHgAdAB8AIAAgAB8AIQAiACIAIQAjACQAJAAjACUAJgAmACUAJwAoACgAJwApACoAKgApACsALAAsACsALQAuAC4ALQAvADEAMQAwADMANAA0ADMANgE3ATYBNwE4ATgBNwE5AToBOgE5ATsBPAE8ATsBPQE+AT4BPwFAAUIBQgFAAkAEgASAA0AFAAWABYAFAAZABwAHAAZAB0AHwAfAB0AIAAiACIAIQAjACUAJQAjACYAJwAnACYAJwAoACkAKQAnACoALAAsACoALQAwAC8ALgAxADMANAA0ADMBNQE3ATcBNgE5ATsBOwE5ATwBPgE+ATwBPwFBAUEBPwFBAUMBRQFDAUMBRgFIAUgBRgFJAUwBTAFJAUsBTwFPB6gOAAEAAgADAAIABAAFAAUABAAFAAYABgAFAAYABwAHAAgACAAHAAgACQAJAAoACgAJAAoACwALAAwADQANAAwADgAOAA4ADwAQABAADwARABEAEQASABMAEgATABQAFQAUABUAFAAVABYAFwAWABcAFgAXABgAGgAYABkAFwAaABsAGwAaABwAHgAdAB0AHQAfACEAIAAhACIAIwAjACIAJAAmACYAJQAjACUAJwApACgAKAAqACwALAArAC0ALwAvAC0ALwAxADMALgAwADYANgA0ADcANwA0ADYBOQA5ADYBOgA7ADsAOQA9AD4APgA8AD8AQQBBAUEBQwFDAUEBQwFEAUYBRQFGAYoN'
-const alarm = new Audio(ALARM_SOUND);
+import { useLocalization } from '../hooks/useLocalization';
 
 const getTodayDateString = () => new Date().toISOString().slice(0, 10);
 
@@ -22,6 +20,45 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
   const [editingMedicine, setEditingMedicine] = useState<Medicine | null>(null);
   const [notificationPermission, setNotificationPermission] = useState<NotificationPermission>('default');
   const [notifiedMeds, setNotifiedMeds] = useState<Record<string, number>>({}); // { medId: timestamp }
+  const { t, language, locale } = useLocalization();
+
+  const speak = useCallback((text: string) => {
+    if (!('speechSynthesis' in window)) {
+        console.warn("Speech Synthesis not supported by this browser.");
+        return;
+    }
+
+    // Cancel any ongoing speech
+    window.speechSynthesis.cancel();
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    
+    const setVoice = () => {
+        const voices = window.speechSynthesis.getVoices();
+        if (voices.length === 0) {
+            return; 
+        }
+
+        let bestVoice = voices.find(voice => voice.lang === locale) || 
+                        voices.find(voice => voice.lang.startsWith(locale.split('-')[0]));
+        
+        if (bestVoice) {
+            utterance.voice = bestVoice;
+            utterance.lang = bestVoice.lang;
+        } else {
+            // Fallback if no specific language voice is found
+            utterance.lang = locale;
+        }
+        
+        window.speechSynthesis.speak(utterance);
+    };
+
+    if (window.speechSynthesis.getVoices().length === 0) {
+        window.speechSynthesis.onvoiceschanged = setVoice;
+    } else {
+        setVoice();
+    }
+  }, [locale]);
 
   useEffect(() => {
     const storedMedicines = localStorage.getItem('medirem-medicines');
@@ -29,7 +66,6 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
       setMedicines(JSON.parse(storedMedicines));
     }
     
-    // Check and request notification permission on component mount
     if ('Notification' in window) {
       setNotificationPermission(Notification.permission);
       if (Notification.permission === 'default') {
@@ -57,8 +93,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
     }));
     if (notification?.id === medId) {
         setNotification(null);
-        alarm.pause();
-        alarm.currentTime = 0;
+        window.speechSynthesis.cancel();
     }
   }, [notification]);
   
@@ -72,12 +107,10 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
     }));
      if (notification?.id === medId) {
         setNotification(null);
-        alarm.pause();
-        alarm.currentTime = 0;
+        window.speechSynthesis.cancel();
     }
   }, [notification]);
 
-  // Listen for messages from the Service Worker
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
       if (!event.data) return;
@@ -106,7 +139,6 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
       const isDueAtSchedule = med.time === currentTime;
       const isDueFromSnooze = med.snoozedUntil && now.getTime() >= med.snoozedUntil;
 
-      // Don't trigger original alarm if it's been snoozed and snooze time hasn't passed yet
       if (isDueAtSchedule && med.snoozedUntil && now.getTime() < med.snoozedUntil) {
           return;
       }
@@ -115,10 +147,9 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
       const alreadyHandled = med.adherence[today] && med.adherence[today] !== AdherenceStatus.Pending;
       
       const lastNotified = notifiedMeds[med.id];
-      const recentlyNotified = lastNotified && (Date.now() - lastNotified < 60000); // Prevent re-notifying within 60 seconds
+      const recentlyNotified = lastNotified && (Date.now() - lastNotified < 60000);
 
       if ((isDueAtSchedule || isDueFromSnooze) && isScheduledForToday && !alreadyHandled && !recentlyNotified) {
-        // If the notification was triggered by a snooze, clear the snooze time so it doesn't re-trigger
         if (isDueFromSnooze) {
             setMedicines(prevMeds => prevMeds.map(m => 
                 m.id === med.id ? { ...m, snoozedUntil: undefined } : m
@@ -126,29 +157,41 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
         }
 
         setNotifiedMeds(prev => ({...prev, [med.id]: Date.now()}));
+        
+        const medicineNameForLocale = med.i18n?.[language]?.name || med.name;
 
-        if (notificationPermission === 'granted' && navigator.serviceWorker.controller) {
-          navigator.serviceWorker.controller.postMessage({
-            type: 'SHOW_NOTIFICATION',
-            payload: med
-          });
-          // Also play a sound if the app is currently visible to the user
-          if (document.visibilityState === 'visible') {
-            alarm.play().catch(e => console.error("Error playing sound:", e));
-          }
+        if (document.visibilityState === 'visible') {
+            // If the app is visible, show the in-app modal for a reliable voice prompt.
+            // This also prevents a system notification from appearing when the user is already in the app.
+            if (!notification) {
+                setNotification(med);
+            }
         } else {
-          // Fallback to in-app notification if permission is not granted
-          if (!notification) { // Only show if no other in-app notification is active
-             setNotification(med);
-             alarm.play().catch(e => console.error("Error playing sound:", e));
-          }
+            // If the app is in the background or inactive, send a system push notification (if permission is granted).
+            // Voice prompts from the background are not reliable, so we rely on the standard notification sound.
+            if (notificationPermission === 'granted' && navigator.serviceWorker.controller) {
+                const medicineDescriptionForLocale = med.i18n?.[language]?.description ?? (med.description || t('serviceWorker.notificationBodyDefaultDescription'));
+                navigator.serviceWorker.controller.postMessage({
+                    type: 'SHOW_NOTIFICATION',
+                    payload: {
+                      medicine: med,
+                      title: t('serviceWorker.notificationTitle', { medicineName: medicineNameForLocale }),
+                      body: t('serviceWorker.notificationBody', { medicineDescription: medicineDescriptionForLocale }),
+                      actions: {
+                          take: t('serviceWorker.actionTake'),
+                          snooze: t('serviceWorker.actionSnooze'),
+                          skip: t('serviceWorker.actionSkip'),
+                      }
+                    }
+                });
+            }
         }
       }
     });
-  }, [medicines, notification, notificationPermission, notifiedMeds]);
+  }, [medicines, notification, notificationPermission, notifiedMeds, t, language]);
   
   useEffect(() => {
-    const interval = setInterval(checkSchedules, 1000); // Check every second for precision
+    const interval = setInterval(checkSchedules, 1000);
     return () => clearInterval(interval);
   }, [checkSchedules]);
   
@@ -183,12 +226,18 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
     }).sort((a,b) => a.time.localeCompare(b.time));
   }, [medicines]);
 
+  const reminderTextForModal = useMemo(() => {
+    if (!notification) return '';
+    const medicineNameForLocale = notification.i18n?.[language]?.name || notification.name;
+    return t('voiceReminder.prompt', { medicineName: medicineNameForLocale });
+  }, [notification, language, t]);
+
   return (
     <div className="min-h-screen bg-background font-sans text-text-primary">
       <Header user={user} onLogout={onLogout} />
       <main className="p-4 md:p-8 max-w-4xl mx-auto">
           <div>
-              <h1 className="text-3xl font-bold mb-6">Today's Schedule</h1>
+              <h1 className="text-3xl font-bold mb-6">{t('dashboard.title')}</h1>
               <MedicineList 
                   medicines={todaySchedule} 
                   onDelete={handleDeleteMedicine}
@@ -210,7 +259,12 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
       {notification && (
         <NotificationModal
           medicine={notification}
-          onClose={() => setNotification(null)}
+          speak={speak}
+          reminderText={reminderTextForModal}
+          onClose={() => {
+            window.speechSynthesis.cancel();
+            setNotification(null);
+          }}
           onConfirm={handleAdherence}
           onSnooze={handleSnooze}
         />
@@ -221,7 +275,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
             setIsModalOpen(true);
           }}
           className="fixed bottom-8 right-8 bg-primary text-white rounded-full p-4 shadow-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-transform transform hover:scale-110 z-30"
-          aria-label="Add new medicine"
+          aria-label={t('dashboard.addMedicineAria')}
       >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clipRule="evenodd" />

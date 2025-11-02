@@ -12,9 +12,15 @@ export enum AdherenceStatus {
 
 export interface Medicine {
   id: string;
-  name: string;
+  name: string; // Original user input
   photo?: string; // base64 string
-  description?: string;
+  description?: string; // Original user input
+  i18n?: {
+    [lang: string]: {
+      name: string;
+      description?: string;
+    };
+  };
   time: string; // "HH:MM" format
   frequency: Frequency;
   dayOfWeek?: number; // 0 (Sun) - 6 (Sat), only for weekly

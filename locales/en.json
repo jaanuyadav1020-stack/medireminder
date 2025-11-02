@@ -1,0 +1,93 @@
+
+{
+  "loginPage": {
+    "title": "Welcome to Medirem",
+    "subtitle": "Your personal medication assistant.",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "john@doe.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Password",
+    "signInButton": "Sign In",
+    "or": "Or",
+    "guestButton": "Continue as Guest",
+    "alertMissingCredentials": "Please enter email and password."
+  },
+  "header": {
+    "greeting": "Hello, {name}",
+    "logoutButton": "Logout"
+  },
+  "dashboard": {
+    "title": "Today's Schedule",
+    "addMedicineAria": "Add new medicine"
+  },
+  "medicineList": {
+    "emptyTitle": "No Medicines Scheduled",
+    "emptySubtitle": "Click the '+' button to get started.",
+    "takenAria": "Mark as taken",
+    "missedAria": "Mark as missed",
+    "editAria": "Edit medicine",
+    "deleteAria": "Delete medicine"
+  },
+  "adherence": {
+    "Pending": "Pending",
+    "Taken": "Taken",
+    "Missed": "Missed",
+    "chartTitle": "Last 7 Days Adherence",
+    "tooltipTaken": "Taken",
+    "tooltipMissed": "Missed",
+    "tooltipPending": "Pending",
+    "tooltipNotScheduled": "Not scheduled"
+  },
+  "frequency": {
+    "Daily": "Daily",
+    "Weekly": "Weekly"
+  },
+  "addMedicineModal": {
+    "titleEdit": "Edit Medicine",
+    "titleAdd": "Add New Medicine",
+    "gallery": "Gallery",
+    "camera": "Camera",
+    "ocrLoading": "Recognizing...",
+    "ocrButton": "Recognize with AI",
+    "ocrErrorPhoto": "Please upload a photo first.",
+    "confirmOcrTitle": "Confirm AI Result",
+    "confirmOcrSubtitle": "Please review and edit the recognized details below before confirming.",
+    "nameLabel": "Medicine Name",
+    "descriptionLabel": "Description",
+    "discard": "Discard",
+    "confirmAndUse": "Confirm & Use",
+    "descriptionAILabel": "Description (AI-assisted)",
+    "descriptionPlaceholder": "e.g., Used to treat high blood pressure.",
+    "timeLabel": "Time",
+    "frequencyLabel": "Frequency",
+    "dayOfWeekLabel": "Day of the Week",
+    "alertNameEmpty": "Medicine name cannot be empty.",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saving": "Saving...",
+    "suggestionLoading": "Checking for suggestions...",
+    "suggestionPrompt": "Did you mean: ",
+    "timePresetMorning": "Morning",
+    "timePresetNoon": "Noon",
+    "timePresetEvening": "Evening",
+    "timePresetNight": "Night"
+  },
+  "notificationModal": {
+    "title": "Time for your medicine!",
+    "subtitle": "It's {time}. Please take:",
+    "confirmButton": "I've Taken It",
+    "snoozeButton": "Snooze (15 min)",
+    "skipButton": "Skip for Now"
+  },
+  "serviceWorker": {
+    "notificationTitle": "Reminder: {medicineName}",
+    "notificationBody": "It's time for your dose: {medicineDescription}",
+    "notificationBodyDefaultDescription": "Check the app for details.",
+    "actionTake": "I've Taken It",
+    "actionSnooze": "Snooze (15 min)",
+    "actionSkip": "Skip for Now"
+  },
+  "voiceReminder": {
+    "prompt": "{medicineName}. Take your medicine."
+  }
+}

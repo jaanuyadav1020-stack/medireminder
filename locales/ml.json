@@ -1,0 +1,93 @@
+
+{
+  "loginPage": {
+    "title": "മെഡിറെമിലേക്ക് സ്വാഗതം",
+    "subtitle": "നിങ്ങളുടെ വ്യക്തിഗത മരുന്ന് സഹായി.",
+    "emailLabel": "ഇമെയിൽ വിലാസം",
+    "emailPlaceholder": "john@doe.com",
+    "passwordLabel": "പാസ്‌വേഡ്",
+    "passwordPlaceholder": "പാസ്‌വേഡ്",
+    "signInButton": "സൈൻ ഇൻ ചെയ്യുക",
+    "or": "അല്ലെങ്കിൽ",
+    "guestButton": "അതിഥിയായി തുടരുക",
+    "alertMissingCredentials": "ദയവായി ഇമെയിലും പാസ്‌വേഡും നൽകുക."
+  },
+  "header": {
+    "greeting": "നമസ്കാരം, {name}",
+    "logoutButton": "ലോഗ് ഔട്ട്"
+  },
+  "dashboard": {
+    "title": "ഇന്നത്തെ ഷെഡ്യൂൾ",
+    "addMedicineAria": "പുതിയ മരുന്ന് ചേർക്കുക"
+  },
+  "medicineList": {
+    "emptyTitle": "മരുന്നുകളൊന്നും ഷെഡ്യൂൾ ചെയ്തിട്ടില്ല",
+    "emptySubtitle": "ആരംഭിക്കുന്നതിന് '+' ബട്ടൺ ക്ലിക്കുചെയ്യുക.",
+    "takenAria": "കഴിച്ചതായി അടയാളപ്പെടുത്തുക",
+    "missedAria": "നഷ്ടപ്പെട്ടതായി അടയാളപ്പെടുത്തുക",
+    "editAria": "മരുന്ന് എഡിറ്റുചെയ്യുക",
+    "deleteAria": "മരുന്ന് ഇല്ലാതാക്കുക"
+  },
+  "adherence": {
+    "Pending": "തീർച്ചപ്പെടുത്തിയിട്ടില്ല",
+    "Taken": "കഴിച്ചത്",
+    "Missed": "നഷ്ടമായത്",
+    "chartTitle": "കഴിഞ്ഞ 7 ദിവസത്തെ അനുസരണം",
+    "tooltipTaken": "കഴിച്ചത്",
+    "tooltipMissed": "നഷ്ടമായത്",
+    "tooltipPending": "തീർച്ചപ്പെടുത്തിയിട്ടില്ല",
+    "tooltipNotScheduled": "ഷെഡ്യൂൾ ചെയ്തിട്ടില്ല"
+  },
+  "frequency": {
+    "Daily": "ദിവസേന",
+    "Weekly": "ആഴ്ചതോറും"
+  },
+  "addMedicineModal": {
+    "titleEdit": "മരുന്ന് എഡിറ്റുചെയ്യുക",
+    "titleAdd": "പുതിയ മരുന്ന് ചേർക്കുക",
+    "gallery": "ഗാലറി",
+    "camera": "ക്യാമറ",
+    "ocrLoading": "തിരിച്ചറിയുന്നു...",
+    "ocrButton": "AI ഉപയോഗിച്ച് തിരിച്ചറിയുക",
+    "ocrErrorPhoto": "ദയവായി ആദ്യം ഒരു ഫോട്ടോ അപ്‌ലോഡ് ചെയ്യുക.",
+    "confirmOcrTitle": "AI ഫലം സ്ഥിരീകരിക്കുക",
+    "confirmOcrSubtitle": "സ്ഥിരീകരിക്കുന്നതിന് മുമ്പ് താഴെ തിരിച്ചറിഞ്ഞ വിശദാംശങ്ങൾ അവലോകനം ചെയ്ത് എഡിറ്റുചെയ്യുക.",
+    "nameLabel": "മരുന്നിന്റെ പേര്",
+    "descriptionLabel": "വിവരണം",
+    "discard": "ഉപേക്ഷിക്കുക",
+    "confirmAndUse": "സ്ഥിരീകരിച്ച് ഉപയോഗിക്കുക",
+    "descriptionAILabel": "വിവരണം (AI-സഹായത്തോടെ)",
+    "descriptionPlaceholder": "ഉദാ. ഉയർന്ന രക്തസമ്മർദ്ദം ചികിത്സിക്കാൻ ഉപയോഗിക്കുന്നു.",
+    "timeLabel": "സമയം",
+    "frequencyLabel": "ആവൃത്തി",
+    "dayOfWeekLabel": "ആഴ്ചയിലെ ദിവസം",
+    "alertNameEmpty": "മരുന്നിന്റെ പേര് ശൂന്യമായിരിക്കാൻ പാടില്ല.",
+    "cancel": "റദ്ദാക്കുക",
+    "save": "സേവ് ചെയ്യുക",
+    "saving": "സേവ് ചെയ്യുന്നു...",
+    "suggestionLoading": "നിർദ്ദേശങ്ങൾക്കായി പരിശോധിക്കുന്നു...",
+    "suggestionPrompt": "നിങ്ങൾ ഉദ്ദേശിച്ചത് ഇതാണോ: ",
+    "timePresetMorning": "രാവിലെ",
+    "timePresetNoon": "ഉച്ചയ്ക്ക്",
+    "timePresetEvening": "വൈകുന്നേരം",
+    "timePresetNight": "രാത്രി"
+  },
+  "notificationModal": {
+    "title": "നിങ്ങളുടെ മരുന്നിനുള്ള സമയം!",
+    "subtitle": "സമയം {time}. ദയവായി കഴിക്കുക:",
+    "confirmButton": "ഞാൻ കഴിച്ചു",
+    "snoozeButton": "സ്‌നൂസ് (15 മിനിറ്റ്)",
+    "skipButton": "ഇപ്പോൾ ഒഴിവാക്കുക"
+  },
+  "serviceWorker": {
+    "notificationTitle": "ഓർമ്മപ്പെടുത്തൽ: {medicineName}",
+    "notificationBody": "നിങ്ങളുടെ ഡോസിനുള്ള സമയമായി: {medicineDescription}",
+    "notificationBodyDefaultDescription": "വിശദാംശങ്ങൾക്കായി ആപ്പ് പരിശോധിക്കുക.",
+    "actionTake": "ഞാൻ കഴിച്ചു",
+    "actionSnooze": "സ്‌നൂസ് (15 മിനിറ്റ്)",
+    "actionSkip": "ഇപ്പോൾ ഒഴിവാക്കുക"
+  },
+  "voiceReminder": {
+    "prompt": "{medicineName}. നിങ്ങളുടെ മരുന്ന് കഴിക്കുക."
+  }
+}

@@ -1,0 +1,93 @@
+
+{
+  "loginPage": {
+    "title": "મેડિરેમમાં આપનું સ્વાગત છે",
+    "subtitle": "તમારા વ્યક્તિગત દવા સહાયક.",
+    "emailLabel": "ઇમેઇલ સરનામું",
+    "emailPlaceholder": "john@doe.com",
+    "passwordLabel": "પાસવર્ડ",
+    "passwordPlaceholder": "પાસવર્ડ",
+    "signInButton": "સાઇન ઇન કરો",
+    "or": "અથવા",
+    "guestButton": "મહેમાન તરીકે ચાલુ રાખો",
+    "alertMissingCredentials": "કૃપા કરીને ઇમેઇલ અને પાસવર્ડ દાખલ કરો."
+  },
+  "header": {
+    "greeting": "નમસ્તે, {name}",
+    "logoutButton": "લૉગ આઉટ"
+  },
+  "dashboard": {
+    "title": "આજનું સમયપત્રક",
+    "addMedicineAria": "નવી દવા ઉમેરો"
+  },
+  "medicineList": {
+    "emptyTitle": "કોઈ દવાઓ નિર્ધારિત નથી",
+    "emptySubtitle": "શરૂ કરવા માટે '+' બટન પર ક્લિક કરો.",
+    "takenAria": "લીધેલી તરીકે ચિહ્નિત કરો",
+    "missedAria": "ચૂકી ગયેલી તરીકે ચિહ્નિત કરો",
+    "editAria": "દવા સંપાદિત કરો",
+    "deleteAria": "દવા કાઢી નાખો"
+  },
+  "adherence": {
+    "Pending": "બાકી",
+    "Taken": "લીધેલ",
+    "Missed": "ચૂકી ગયેલ",
+    "chartTitle": "છેલ્લા 7 દિવસનું પાલન",
+    "tooltipTaken": "લીધેલ",
+    "tooltipMissed": "ચૂકી ગયેલ",
+    "tooltipPending": "બાકી",
+    "tooltipNotScheduled": "નિર્ધારિત નથી"
+  },
+  "frequency": {
+    "Daily": "દૈનિક",
+    "Weekly": "સાપ્તાહિક"
+  },
+  "addMedicineModal": {
+    "titleEdit": "દવા સંપાદિત કરો",
+    "titleAdd": "નવી દવા ઉમેરો",
+    "gallery": "ગેલેરી",
+    "camera": "કેમેરા",
+    "ocrLoading": "ઓળખી રહ્યું છે...",
+    "ocrButton": "AI વડે ઓળખો",
+    "ocrErrorPhoto": "કૃપા કરીને પહેલા ફોટો અપલોડ કરો.",
+    "confirmOcrTitle": "AI પરિણામની પુષ્ટિ કરો",
+    "confirmOcrSubtitle": "પુષ્ટિ કરતા પહેલા કૃપા કરીને નીચેની ઓળખાયેલ વિગતોની સમીક્ષા કરો અને સંપાદિત કરો.",
+    "nameLabel": "દવાનું નામ",
+    "descriptionLabel": "વર્ણન",
+    "discard": "કાઢી નાખો",
+    "confirmAndUse": "પુષ્ટિ કરો અને ઉપયોગ કરો",
+    "descriptionAILabel": "વર્ણન (AI-સહાયિત)",
+    "descriptionPlaceholder": "દા.ત., ઉચ્ચ રક્તદાબની સારવાર માટે વપરાય છે.",
+    "timeLabel": "સમય",
+    "frequencyLabel": "આવર્તન",
+    "dayOfWeekLabel": "અઠવાડિયાનો દિવસ",
+    "alertNameEmpty": "દવાનું નામ ખાલી ન હોઈ શકે.",
+    "cancel": "રદ કરો",
+    "save": "સાચવો",
+    "saving": "સાચવી રહ્યું છે...",
+    "suggestionLoading": "સૂચનો માટે તપાસી રહ્યું છે...",
+    "suggestionPrompt": "શું તમારો મતલબ આ હતો: ",
+    "timePresetMorning": "સવાર",
+    "timePresetNoon": "બપોર",
+    "timePresetEvening": "સાંજ",
+    "timePresetNight": "રાત"
+  },
+  "notificationModal": {
+    "title": "તમારી દવાનો સમય!",
+    "subtitle": "{time} વાગ્યા છે. કૃપા કરીને લો:",
+    "confirmButton": "મેં લઈ લીધી છે",
+    "snoozeButton": "સ્નૂઝ (15 મિનિટ)",
+    "skipButton": "હમણાં માટે છોડી દો"
+  },
+  "serviceWorker": {
+    "notificationTitle": "રીમાઇન્ડર: {medicineName}",
+    "notificationBody": "તમારા ડોઝનો સમય થઈ ગયો છે: {medicineDescription}",
+    "notificationBodyDefaultDescription": "વિગતો માટે એપ્લિકેશન તપાસો.",
+    "actionTake": "મેં લઈ લીધી છે",
+    "actionSnooze": "સ્નૂઝ (15 મિનિટ)",
+    "actionSkip": "હમણાં માટે છોડી દો"
+  },
+  "voiceReminder": {
+    "prompt": "{medicineName}. તમારી દવા લો."
+  }
+}

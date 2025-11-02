@@ -1,0 +1,93 @@
+
+{
+  "loginPage": {
+    "title": "Bienvenido a Medirem",
+    "subtitle": "Su asistente personal de medicamentos.",
+    "emailLabel": "Dirección de correo electrónico",
+    "emailPlaceholder": "juan@perez.com",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "Contraseña",
+    "signInButton": "Iniciar sesión",
+    "or": "O",
+    "guestButton": "Continuar como invitado",
+    "alertMissingCredentials": "Por favor, ingrese el correo electrónico y la contraseña."
+  },
+  "header": {
+    "greeting": "Hola, {name}",
+    "logoutButton": "Cerrar sesión"
+  },
+  "dashboard": {
+    "title": "Horario de hoy",
+    "addMedicineAria": "Añadir nuevo medicamento"
+  },
+  "medicineList": {
+    "emptyTitle": "No hay medicamentos programados",
+    "emptySubtitle": "Haga clic en el botón '+' para comenzar.",
+    "takenAria": "Marcar como tomado",
+    "missedAria": "Marcar como omitido",
+    "editAria": "Editar medicamento",
+    "deleteAria": "Eliminar medicamento"
+  },
+  "adherence": {
+    "Pending": "Pendiente",
+    "Taken": "Tomado",
+    "Missed": "Omitido",
+    "chartTitle": "Cumplimiento de los últimos 7 días",
+    "tooltipTaken": "Tomado",
+    "tooltipMissed": "Omitido",
+    "tooltipPending": "Pendiente",
+    "tooltipNotScheduled": "No programado"
+  },
+  "frequency": {
+    "Daily": "Diario",
+    "Weekly": "Semanal"
+  },
+  "addMedicineModal": {
+    "titleEdit": "Editar medicamento",
+    "titleAdd": "Añadir nuevo medicamento",
+    "gallery": "Galería",
+    "camera": "Cámara",
+    "ocrLoading": "Reconociendo...",
+    "ocrButton": "Reconocer con IA",
+    "ocrErrorPhoto": "Por favor, suba una foto primero.",
+    "confirmOcrTitle": "Confirmar resultado de la IA",
+    "confirmOcrSubtitle": "Revise y edite los detalles reconocidos a continuación antes de confirmar.",
+    "nameLabel": "Nombre del medicamento",
+    "descriptionLabel": "Descripción",
+    "discard": "Descartar",
+    "confirmAndUse": "Confirmar y usar",
+    "descriptionAILabel": "Descripción (asistida por IA)",
+    "descriptionPlaceholder": "Ej: Se usa para tratar la presión arterial alta.",
+    "timeLabel": "Hora",
+    "frequencyLabel": "Frecuencia",
+    "dayOfWeekLabel": "Día de la semana",
+    "alertNameEmpty": "El nombre del medicamento no puede estar vacío.",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "saving": "Guardando...",
+    "suggestionLoading": "Buscando sugerencias...",
+    "suggestionPrompt": "¿Quiso decir: ",
+    "timePresetMorning": "Mañana",
+    "timePresetNoon": "Mediodía",
+    "timePresetEvening": "Tarde",
+    "timePresetNight": "Noche"
+  },
+  "notificationModal": {
+    "title": "¡Hora de su medicamento!",
+    "subtitle": "Son las {time}. Por favor, tome:",
+    "confirmButton": "Ya lo tomé",
+    "snoozeButton": "Posponer (15 min)",
+    "skipButton": "Omitir por ahora"
+  },
+  "serviceWorker": {
+    "notificationTitle": "Recordatorio: {medicineName}",
+    "notificationBody": "Es hora de su dosis: {medicineDescription}",
+    "notificationBodyDefaultDescription": "Consulte la aplicación para más detalles.",
+    "actionTake": "Ya lo tomé",
+    "actionSnooze": "Posponer (15 min)",
+    "actionSkip": "Omitir por ahora"
+  },
+  "voiceReminder": {
+    "prompt": "{medicineName}. Tome su medicamento."
+  }
+}

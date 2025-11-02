@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { LocalizationProvider } from './hooks/useLocalization';
 
 // Service Worker Registration
 if ('serviceWorker' in navigator) {
@@ -23,6 +24,8 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <App />
+    <LocalizationProvider>
+      <App />
+    </LocalizationProvider>
   </React.StrictMode>
 );

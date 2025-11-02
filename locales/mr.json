@@ -1,0 +1,93 @@
+
+{
+  "loginPage": {
+    "title": "मेडिरेम मध्ये आपले स्वागत आहे",
+    "subtitle": "तुमचा वैयक्तिक औषधोपचार सहाय्यक.",
+    "emailLabel": "ईमेल पत्ता",
+    "emailPlaceholder": "john@doe.com",
+    "passwordLabel": "पासवर्ड",
+    "passwordPlaceholder": "पासवर्ड",
+    "signInButton": "साइन इन करा",
+    "or": "किंवा",
+    "guestButton": "अतिथी म्हणून सुरू ठेवा",
+    "alertMissingCredentials": "कृपया ईमेल आणि पासवर्ड प्रविष्ट करा."
+  },
+  "header": {
+    "greeting": "नमस्कार, {name}",
+    "logoutButton": "लॉगआउट"
+  },
+  "dashboard": {
+    "title": "आजचे वेळापत्रक",
+    "addMedicineAria": "नवीन औषध जोडा"
+  },
+  "medicineList": {
+    "emptyTitle": "कोणतीही औषधे शेड्यूल केलेली नाहीत",
+    "emptySubtitle": "प्रारंभ करण्यासाठी '+' बटणावर क्लिक करा.",
+    "takenAria": "घेतलेले म्हणून चिन्हांकित करा",
+    "missedAria": "चुकलेले म्हणून चिन्हांकित करा",
+    "editAria": "औषध संपादित करा",
+    "deleteAria": "औषध हटवा"
+  },
+  "adherence": {
+    "Pending": "प्रलंबित",
+    "Taken": "घेतलेले",
+    "Missed": "चुकलेले",
+    "chartTitle": "मागील ७ दिवसांचे पालन",
+    "tooltipTaken": "घेतलेले",
+    "tooltipMissed": "चुकलेले",
+    "tooltipPending": "प्रलंबित",
+    "tooltipNotScheduled": "शेड्यूल केलेले नाही"
+  },
+  "frequency": {
+    "Daily": "दररोज",
+    "Weekly": "साप्ताहिक"
+  },
+  "addMedicineModal": {
+    "titleEdit": "औषध संपादित करा",
+    "titleAdd": "नवीन औषध जोडा",
+    "gallery": "गॅलरी",
+    "camera": "कॅमेरा",
+    "ocrLoading": "ओळखत आहे...",
+    "ocrButton": "AI सह ओळखा",
+    "ocrErrorPhoto": "कृपया प्रथम एक फोटो अपलोड करा.",
+    "confirmOcrTitle": "AI परिणाम निश्चित करा",
+    "confirmOcrSubtitle": "कृपया निश्चित करण्यापूर्वी खालील ओळखलेले तपशील तपासा आणि संपादित करा.",
+    "nameLabel": "औषधाचे नाव",
+    "descriptionLabel": "वर्णन",
+    "discard": "टाकून द्या",
+    "confirmAndUse": "निश्चित करा आणि वापरा",
+    "descriptionAILabel": "वर्णन (AI-सहाय्यित)",
+    "descriptionPlaceholder": "उदा. उच्च रक्तदाबावर उपचार करण्यासाठी वापरले जाते.",
+    "timeLabel": "वेळ",
+    "frequencyLabel": "वारंवारता",
+    "dayOfWeekLabel": "आठवड्याचा दिवस",
+    "alertNameEmpty": "औषधाचे नाव रिक्त असू शकत नाही.",
+    "cancel": "रद्द करा",
+    "save": "जतन करा",
+    "saving": "जतन करत आहे...",
+    "suggestionLoading": "सूचना तपासत आहे...",
+    "suggestionPrompt": "तुमचा अर्थ असा होता का: ",
+    "timePresetMorning": "सकाळ",
+    "timePresetNoon": "दुपार",
+    "timePresetEvening": "संध्याकाळ",
+    "timePresetNight": "रात्र"
+  },
+  "notificationModal": {
+    "title": "तुमच्या औषधाची वेळ झाली आहे!",
+    "subtitle": "{time} वाजले आहेत. कृपया घ्या:",
+    "confirmButton": "मी घेतले आहे",
+    "snoozeButton": "स्नूझ (१५ मिनिटे)",
+    "skipButton": "आतासाठी वगळा"
+  },
+  "serviceWorker": {
+    "notificationTitle": "स्मरणपत्र: {medicineName}",
+    "notificationBody": "तुमच्या डोसची वेळ झाली आहे: {medicineDescription}",
+    "notificationBodyDefaultDescription": "तपशिलांसाठी ॲप तपासा.",
+    "actionTake": "मी घेतले आहे",
+    "actionSnooze": "स्नूझ (१५ मिनिटे)",
+    "actionSkip": "आतासाठी वगळा"
+  },
+  "voiceReminder": {
+    "prompt": "{medicineName}. आपले औषध घ्या."
+  }
+}

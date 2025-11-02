@@ -1,0 +1,93 @@
+
+{
+  "loginPage": {
+    "title": "మెడిరెమ్‌కు స్వాగతం",
+    "subtitle": "మీ వ్యక్తిగత మందుల సహాయకుడు.",
+    "emailLabel": "ఇమెయిల్ చిరునామా",
+    "emailPlaceholder": "john@doe.com",
+    "passwordLabel": "పాస్‌వర్డ్",
+    "passwordPlaceholder": "పాస్‌వర్డ్",
+    "signInButton": "సైన్ ఇన్ చేయండి",
+    "or": "లేదా",
+    "guestButton": "అతిథిగా కొనసాగండి",
+    "alertMissingCredentials": "దయచేసి ఇమెయిల్ మరియు పాస్‌వర్డ్ నమోదు చేయండి."
+  },
+  "header": {
+    "greeting": "నమస్కారం, {name}",
+    "logoutButton": "లాగ్ అవుట్"
+  },
+  "dashboard": {
+    "title": "నేటి షెడ్యూల్",
+    "addMedicineAria": "కొత్త மருந்துను జోడించండి"
+  },
+  "medicineList": {
+    "emptyTitle": "మందులు షెడ్యూల్ చేయబడలేదు",
+    "emptySubtitle": "ప్రారంభించడానికి '+' బటన్‌ను క్లిక్ చేయండి.",
+    "takenAria": "తీసుకున్నట్లు గుర్తించండి",
+    "missedAria": "తప్పినట్లు గుర్తించండి",
+    "editAria": "మందును సవరించండి",
+    "deleteAria": "మందును తొలగించండి"
+  },
+  "adherence": {
+    "Pending": "పెండింగ్‌లో ఉంది",
+    "Taken": "తీసుకున్నారు",
+    "Missed": "తప్పిపోయింది",
+    "chartTitle": "గత 7 రోజుల కట్టుబడి",
+    "tooltipTaken": "తీసుకున్నారు",
+    "tooltipMissed": "తప్పిపోయింది",
+    "tooltipPending": "పెండింగ్‌లో ఉంది",
+    "tooltipNotScheduled": "షెడ్యూల్ చేయబడలేదు"
+  },
+  "frequency": {
+    "Daily": "రోజువారీ",
+    "Weekly": "వారంవారీ"
+  },
+  "addMedicineModal": {
+    "titleEdit": "మందును సవరించండి",
+    "titleAdd": "కొత్త మందు జోడించండి",
+    "gallery": "గ్యాలరీ",
+    "camera": "కెమెరా",
+    "ocrLoading": "గుర్తిస్తోంది...",
+    "ocrButton": "AI తో గుర్తించండి",
+    "ocrErrorPhoto": "దయచేసి ముందుగా ఒక ఫోటోను అప్‌లోడ్ చేయండి.",
+    "confirmOcrTitle": "AI ఫలితాన్ని నిర్ధారించండి",
+    "confirmOcrSubtitle": "నిర్ధారించే ముందు దయచేసి క్రింద గుర్తించబడిన వివరాలను సమీక్షించి, సవరించండి.",
+    "nameLabel": "మందు పేరు",
+    "descriptionLabel": "వివరణ",
+    "discard": "విస్మరించండి",
+    "confirmAndUse": "నిర్ధారించి ఉపయోగించండి",
+    "descriptionAILabel": "వివరణ (AI-సహాయంతో)",
+    "descriptionPlaceholder": "ఉదా. అధిక రక్తపోటు చికిత్సకు ఉపయోగిస్తారు.",
+    "timeLabel": "సమయం",
+    "frequencyLabel": "ఫ్రీక్వెన్సీ",
+    "dayOfWeekLabel": "వారం యొక్క రోజు",
+    "alertNameEmpty": "మందు పేరు ఖాళీగా ఉండకూడదు.",
+    "cancel": "రద్దు చేయండి",
+    "save": "సేవ్ చేయండి",
+    "saving": "సేవ్ చేస్తోంది...",
+    "suggestionLoading": "సూచనల కోసం తనిఖీ చేస్తోంది...",
+    "suggestionPrompt": "మీ ఉద్దేశ్యం ఇదేనా: ",
+    "timePresetMorning": "ఉదయం",
+    "timePresetNoon": "మధ్యాహ్నం",
+    "timePresetEvening": "సాయంత్రం",
+    "timePresetNight": "రాత్రి"
+  },
+  "notificationModal": {
+    "title": "మీ మందుల సమయం!",
+    "subtitle": "సమయం {time}. దయచేసి తీసుకోండి:",
+    "confirmButton": "నేను తీసుకున్నాను",
+    "snoozeButton": "స్నూజ్ (15 నిమిషాలు)",
+    "skipButton": "ఇప్పటికి దాటవేయండి"
+  },
+  "serviceWorker": {
+    "notificationTitle": "రిమైండర్: {medicineName}",
+    "notificationBody": "మీ డోస్ సమయం ఆసన్నమైంది: {medicineDescription}",
+    "notificationBodyDefaultDescription": "వివరాల కోసం యాప్‌ను తనిఖీ చేయండి.",
+    "actionTake": "నేను తీసుకున్నాను",
+    "actionSnooze": "స్నూజ్ (15 నిమిషాలు)",
+    "actionSkip": "ఇప్పటికి దాటవేయండి"
+  },
+  "voiceReminder": {
+    "prompt": "{medicineName}. మీ మందు తీసుకోండి."
+  }
+}

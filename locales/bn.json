@@ -1,0 +1,93 @@
+
+{
+  "loginPage": {
+    "title": "Medirem-এ স্বাগতম",
+    "subtitle": "আপনার ব্যক্তিগত ঔষধ সহকারী।",
+    "emailLabel": "ইমেল ঠিকানা",
+    "emailPlaceholder": "john@doe.com",
+    "passwordLabel": "পাসওয়ার্ড",
+    "passwordPlaceholder": "পাসওয়ার্ড",
+    "signInButton": "সাইন ইন করুন",
+    "or": "অথবা",
+    "guestButton": "অতিথি হিসাবে চালিয়ে যান",
+    "alertMissingCredentials": "অনুগ্রহ করে ইমেল এবং পাসওয়ার্ড লিখুন।"
+  },
+  "header": {
+    "greeting": "নমস্কার, {name}",
+    "logoutButton": "লগআউট"
+  },
+  "dashboard": {
+    "title": "আজকের সময়সূচী",
+    "addMedicineAria": "নতুন ঔষধ যোগ করুন"
+  },
+  "medicineList": {
+    "emptyTitle": "কোন ঔষধ নির্ধারিত নেই",
+    "emptySubtitle": "শুরু করতে '+' বোতামে ক্লিক করুন।",
+    "takenAria": "নেওয়া হয়েছে হিসাবে চিহ্নিত করুন",
+    "missedAria": "মিস হয়েছে হিসাবে চিহ্নিত করুন",
+    "editAria": "ঔষধ সম্পাদনা করুন",
+    "deleteAria": "ঔষধ মুছুন"
+  },
+  "adherence": {
+    "Pending": "বিচারাধীন",
+    "Taken": "নেওয়া হয়েছে",
+    "Missed": "মিস হয়েছে",
+    "chartTitle": "শেষ ৭ দিনের আনুগত্য",
+    "tooltipTaken": "নেওয়া হয়েছে",
+    "tooltipMissed": "মিস হয়েছে",
+    "tooltipPending": "বিচারাধীন",
+    "tooltipNotScheduled": "নির্ধারিত নয়"
+  },
+  "frequency": {
+    "Daily": "দৈনিক",
+    "Weekly": "সাপ্তাহিক"
+  },
+  "addMedicineModal": {
+    "titleEdit": "ঔষধ সম্পাদনা করুন",
+    "titleAdd": "নতুন ঔষধ যোগ করুন",
+    "gallery": "গ্যালারী",
+    "camera": "ক্যামেরা",
+    "ocrLoading": "শনাক্ত করা হচ্ছে...",
+    "ocrButton": "AI দিয়ে শনাক্ত করুন",
+    "ocrErrorPhoto": "অনুগ্রহ করে প্রথমে একটি ছবি আপলোড করুন।",
+    "confirmOcrTitle": "AI ফলাফল নিশ্চিত করুন",
+    "confirmOcrSubtitle": "নিশ্চিত করার আগে অনুগ্রহ করে নীচের স্বীকৃত বিবরণ পর্যালোচনা এবং সম্পাদনা করুন।",
+    "nameLabel": "ঔষধের নাম",
+    "descriptionLabel": "বিবরণ",
+    "discard": "বাতিল করুন",
+    "confirmAndUse": "নিশ্চিত করুন এবং ব্যবহার করুন",
+    "descriptionAILabel": "বিবরণ (AI-সহায়তায়)",
+    "descriptionPlaceholder": "যেমন, উচ্চ রক্তচাপের চিকিৎসার জন্য ব্যবহৃত হয়।",
+    "timeLabel": "সময়",
+    "frequencyLabel": "কম্পাঙ্ক",
+    "dayOfWeekLabel": "সপ্তাহের দিন",
+    "alertNameEmpty": "ঔষধের নাম খালি রাখা যাবে না।",
+    "cancel": "বাতিল",
+    "save": "সংরক্ষণ",
+    "saving": "সংরক্ষণ করা হচ্ছে...",
+    "suggestionLoading": "সুপারিশের জন্য পরীক্ষা করা হচ্ছে...",
+    "suggestionPrompt": "আপনি কি বলতে চেয়েছিলেন: ",
+    "timePresetMorning": "সকাল",
+    "timePresetNoon": "দুপুর",
+    "timePresetEvening": "সন্ধ্যা",
+    "timePresetNight": "রাত"
+  },
+  "notificationModal": {
+    "title": "আপনার ঔষধের সময় হয়েছে!",
+    "subtitle": "এখন {time}। অনুগ্রহ করে নিন:",
+    "confirmButton": "আমি নিয়েছি",
+    "snoozeButton": "স্নুজ (১৫ মিনিট)",
+    "skipButton": "এখনকার জন্য এড়িয়ে যান"
+  },
+  "serviceWorker": {
+    "notificationTitle": "অনুস্মারক: {medicineName}",
+    "notificationBody": "আপনার ডোজের সময় হয়েছে: {medicineDescription}",
+    "notificationBodyDefaultDescription": "বিস্তারিত জানতে অ্যাপ দেখুন।",
+    "actionTake": "আমি নিয়েছি",
+    "actionSnooze": "স্নুজ (১৫ মিনিট)",
+    "actionSkip": "এখনকার জন্য এড়িয়ে যান"
+  },
+  "voiceReminder": {
+    "prompt": "{medicineName}. আপনার ঔষধ নিন।"
+  }
+}

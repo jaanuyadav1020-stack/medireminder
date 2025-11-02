@@ -1,6 +1,7 @@
 import React from 'react';
 import { Medicine, AdherenceStatus } from '../types';
 import AdherenceChart from './AdherenceChart';
+import { useLocalization } from '../hooks/useLocalization';
 
 interface MedicineListProps {
   medicines: Medicine[];
@@ -16,8 +17,12 @@ const getStatusForToday = (medicine: Medicine) => {
 
 
 const MedicineListItem: React.FC<{ medicine: Medicine; onDelete: (id: string) => void; onAdherenceChange: (id: string, status: AdherenceStatus) => void; onEdit: (medicine: Medicine) => void;}> = ({ medicine, onDelete, onAdherenceChange, onEdit }) => {
+    const { t, language } = useLocalization();
     const status = getStatusForToday(medicine);
     const isPending = status === AdherenceStatus.Pending;
+    
+    const displayName = medicine.i18n?.[language]?.name || medicine.name;
+    const displayDescription = medicine.i18n?.[language]?.description ?? medicine.description;
     
     const statusClasses = {
       [AdherenceStatus.Pending]: 'bg-yellow-100 text-yellow-800',
@@ -30,7 +35,7 @@ const MedicineListItem: React.FC<{ medicine: Medicine; onDelete: (id: string) =>
             <div className="flex items-start justify-between space-x-4">
                 <div className="flex items-center space-x-4 flex-1 min-w-0">
                     {medicine.photo ? (
-                        <img src={medicine.photo} alt={medicine.name} className="h-16 w-16 rounded-full object-cover shadow-md flex-shrink-0" />
+                        <img src={medicine.photo} alt={displayName} className="h-16 w-16 rounded-full object-cover shadow-md flex-shrink-0" />
                     ) : (
                          <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-md flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -39,33 +44,33 @@ const MedicineListItem: React.FC<{ medicine: Medicine; onDelete: (id: string) =>
                          </div>
                     )}
                     <div className="flex-1">
-                        <p className="font-bold text-lg text-text-primary truncate">{medicine.name}</p>
-                        <p className="text-text-secondary text-sm">{medicine.time} - {medicine.frequency}</p>
-                        {medicine.description && (
-                             <p className="mt-1 text-xs text-gray-600 italic">"{medicine.description}"</p>
+                        <p className="font-bold text-lg text-text-primary truncate">{displayName}</p>
+                        <p className="text-text-secondary text-sm">{medicine.time} - {t(`frequency.${medicine.frequency}`)}</p>
+                        {displayDescription && (
+                             <p className="mt-1 text-xs text-gray-600 italic">"{displayDescription}"</p>
                         )}
                     </div>
                 </div>
                 
                 <div className="flex items-center space-x-2 flex-shrink-0">
-                    <span className={`px-3 py-1 text-xs font-semibold rounded-full ${statusClasses[status]}`}>{status}</span>
+                    <span className={`px-3 py-1 text-xs font-semibold rounded-full ${statusClasses[status]}`}>{t(`adherence.${status}`)}</span>
                     {isPending && (
                          <>
-                            <button onClick={() => onAdherenceChange(medicine.id, AdherenceStatus.Taken)} className="p-2 rounded-full bg-green-100 text-green-600 hover:bg-green-200 transition" aria-label="Mark as taken">
+                            <button onClick={() => onAdherenceChange(medicine.id, AdherenceStatus.Taken)} className="p-2 rounded-full bg-green-100 text-green-600 hover:bg-green-200 transition" aria-label={t('medicineList.takenAria')}>
                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
                             </button>
-                            <button onClick={() => onAdherenceChange(medicine.id, AdherenceStatus.Missed)} className="p-2 rounded-full bg-red-100 text-red-600 hover:bg-red-200 transition" aria-label="Mark as missed">
+                            <button onClick={() => onAdherenceChange(medicine.id, AdherenceStatus.Missed)} className="p-2 rounded-full bg-red-100 text-red-600 hover:bg-red-200 transition" aria-label={t('medicineList.missedAria')}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
                             </button>
                          </>
                     )}
-                     <button onClick={() => onEdit(medicine)} className="p-2 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 transition" aria-label="Edit medicine">
+                     <button onClick={() => onEdit(medicine)} className="p-2 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 transition" aria-label={t('medicineList.editAria')}>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
                             <path fillRule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clipRule="evenodd" />
                         </svg>
                     </button>
-                     <button onClick={() => onDelete(medicine.id)} className="p-2 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 transition" aria-label="Delete medicine">
+                     <button onClick={() => onDelete(medicine.id)} className="p-2 rounded-full bg-gray-100 text-gray-500 hover:bg-gray-200 transition" aria-label={t('medicineList.deleteAria')}>
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
                     </button>
                 </div>
@@ -77,14 +82,15 @@ const MedicineListItem: React.FC<{ medicine: Medicine; onDelete: (id: string) =>
 
 
 const MedicineList: React.FC<MedicineListProps> = ({ medicines, onDelete, onAdherenceChange, onEdit }) => {
+  const { t } = useLocalization();
   if (medicines.length === 0) {
     return (
       <div className="text-center py-16 px-6 bg-white rounded-xl shadow-lg">
         <svg xmlns="http://www.w3.org/2000/svg" className="mx-auto h-12 w-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
-        <h3 className="mt-2 text-xl font-medium text-text-primary">No Medicines Scheduled</h3>
-        <p className="mt-1 text-sm text-text-secondary">Click the '+' button to get started.</p>
+        <h3 className="mt-2 text-xl font-medium text-text-primary">{t('medicineList.emptyTitle')}</h3>
+        <p className="mt-1 text-sm text-text-secondary">{t('medicineList.emptySubtitle')}</p>
       </div>
     );
   }

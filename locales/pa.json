@@ -1,0 +1,93 @@
+
+{
+  "loginPage": {
+    "title": "ਮੈਡੀਰੇਮ ਵਿੱਚ ਤੁਹਾਡਾ ਸੁਆਗਤ ਹੈ",
+    "subtitle": "ਤੁਹਾਡਾ ਨਿੱਜੀ ਦਵਾਈ ਸਹਾਇਕ।",
+    "emailLabel": "ਈਮੇਲ ਪਤਾ",
+    "emailPlaceholder": "john@doe.com",
+    "passwordLabel": "ਪਾਸਵਰਡ",
+    "passwordPlaceholder": "ਪਾਸਵਰਡ",
+    "signInButton": "ਸਾਈਨ ਇਨ ਕਰੋ",
+    "or": "ਜਾਂ",
+    "guestButton": "ਮਹਿਮਾਨ ਵਜੋਂ ਜਾਰੀ ਰੱਖੋ",
+    "alertMissingCredentials": "ਕਿਰਪਾ ਕਰਕੇ ਈਮੇਲ ਅਤੇ ਪਾਸਵਰਡ ਦਾਖਲ ਕਰੋ।"
+  },
+  "header": {
+    "greeting": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ, {name}",
+    "logoutButton": "ਲੌਗ ਆਉਟ"
+  },
+  "dashboard": {
+    "title": "ਅੱਜ ਦਾ ਸ਼ਡਿਊਲ",
+    "addMedicineAria": "ਨਵੀਂ ਦਵਾਈ ਸ਼ਾਮਲ ਕਰੋ"
+  },
+  "medicineList": {
+    "emptyTitle": "ਕੋਈ ਦਵਾਈਆਂ ਤਹਿ ਨਹੀਂ ਹਨ",
+    "emptySubtitle": "ਸ਼ੁਰੂ ਕਰਨ ਲਈ '+' ਬਟਨ 'ਤੇ ਕਲਿੱਕ ਕਰੋ।",
+    "takenAria": "ਲਈ ਗਈ ਵਜੋਂ ਨਿਸ਼ਾਨ ਲਗਾਓ",
+    "missedAria": "ਛੁੱਟ ਗਈ ਵਜੋਂ ਨਿਸ਼ਾਨ ਲਗਾਓ",
+    "editAria": "ਦਵਾਈ ਸੰਪਾਦਿਤ ਕਰੋ",
+    "deleteAria": "ਦਵਾਈ ਮਿਟਾਓ"
+  },
+  "adherence": {
+    "Pending": "ਬਕਾਇਆ",
+    "Taken": "ਲੈ ਲਈ",
+    "Missed": "ਰਹਿ ਗਈ",
+    "chartTitle": "ਪਿਛਲੇ 7 ਦਿਨਾਂ ਦੀ ਪਾਲਣਾ",
+    "tooltipTaken": "ਲੈ ਲਈ",
+    "tooltipMissed": "ਰਹਿ ਗਈ",
+    "tooltipPending": "ਬਕਾਇਆ",
+    "tooltipNotScheduled": "ਤਹਿ ਨਹੀਂ ਹੈ"
+  },
+  "frequency": {
+    "Daily": "ਰੋਜ਼ਾਨਾ",
+    "Weekly": "ਹਫ਼ਤਾਵਾਰੀ"
+  },
+  "addMedicineModal": {
+    "titleEdit": "ਦਵਾਈ ਸੰਪਾਦਿਤ ਕਰੋ",
+    "titleAdd": "ਨਵੀਂ ਦਵਾਈ ਸ਼ਾਮਲ ਕਰੋ",
+    "gallery": "ਗੈਲਰੀ",
+    "camera": "ਕੈਮਰਾ",
+    "ocrLoading": "ਪਛਾณ ਰਿਹਾ ਹੈ...",
+    "ocrButton": "AI ਨਾਲ ਪਛਾਣੋ",
+    "ocrErrorPhoto": "ਕਿਰਪਾ ਕਰਕੇ ਪਹਿਲਾਂ ਇੱਕ ਫੋਟੋ ਅੱਪਲੋਡ ਕਰੋ।",
+    "confirmOcrTitle": "AI ਨਤੀਜੇ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ",
+    "confirmOcrSubtitle": "ਪੁਸ਼ਟੀ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਾਂ ਦਿੱਤੇ ਪਛਾਣੇ ਗਏ ਵੇਰਵਿਆਂ ਦੀ ਸਮੀਖਿਆ ਕਰੋ ਅਤੇ ਸੰਪਾਦਿਤ ਕਰੋ।",
+    "nameLabel": "ਦਵਾਈ ਦਾ ਨਾਮ",
+    "descriptionLabel": "ਵੇਰਵਾ",
+    "discard": "ਖਾਰਜ ਕਰੋ",
+    "confirmAndUse": "ਪੁਸ਼ਟੀ ਕਰੋ ਅਤੇ ਵਰਤੋਂ",
+    "descriptionAILabel": "ਵੇਰਵਾ (AI-ਸਹਾਇਤਾ ਪ੍ਰਾਪਤ)",
+    "descriptionPlaceholder": "ਉਦਾਹਰਨ ਲਈ, ਹਾਈ ਬਲੱਡ ਪ੍ਰੈਸ਼ਰ ਦੇ ਇਲਾਜ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।",
+    "timeLabel": "ਸਮਾਂ",
+    "frequencyLabel": "ਵਾਰਵਾਰਤਾ",
+    "dayOfWeekLabel": "ਹਫ਼ਤੇ ਦਾ ਦਿਨ",
+    "alertNameEmpty": "ਦਵਾਈ ਦਾ ਨਾਮ ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦਾ।",
+    "cancel": "ਰੱਦ ਕਰੋ",
+    "save": "ਸੁਰੱਖਿਅਤ ਕਰੋ",
+    "saving": "ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ...",
+    "suggestionLoading": "ਸੁਝਾਵਾਂ ਦੀ ਜਾਂਚ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ...",
+    "suggestionPrompt": "ਤੁਹਾਡਾ ਮਤਲਬ ਸੀ: ",
+    "timePresetMorning": "ਸਵੇਰ",
+    "timePresetNoon": "ਦੁਪਹਿਰ",
+    "timePresetEvening": "ਸ਼ਾਮ",
+    "timePresetNight": "ਰਾਤ"
+  },
+  "notificationModal": {
+    "title": "ਤੁਹਾਡੀ ਦਵਾਈ ਦਾ ਸਮਾਂ!",
+    "subtitle": "{time} ਵੱਜ ਗਏ ਹਨ। ਕਿਰਪਾ ਕਰਕੇ ਲਓ:",
+    "confirmButton": "ਮੈਂ ਲੈ ਲਈ ਹੈ",
+    "snoozeButton": "ਸਨੂਜ਼ (15 ਮਿੰਟ)",
+    "skipButton": "ਹੁਣ ਲਈ ਛੱਡੋ"
+  },
+  "serviceWorker": {
+    "notificationTitle": "ਯਾਦ-ਦਹਾਨੀ: {medicineName}",
+    "notificationBody": "ਤੁਹਾਡੀ ਖੁਰਾਕ ਦਾ ਸਮਾਂ ਹੋ ਗਿਆ ਹੈ: {medicineDescription}",
+    "notificationBodyDefaultDescription": "ਵੇਰਵਿਆਂ ਲਈ ਐਪ ਦੀ ਜਾਂਚ ਕਰੋ।",
+    "actionTake": "ਮੈਂ ਲੈ ਲਈ ਹੈ",
+    "actionSnooze": "ਸਨੂਜ਼ (15 ਮਿੰਟ)",
+    "actionSkip": "ਹੁਣ ਲਈ ਛੱਡੋ"
+  },
+  "voiceReminder": {
+    "prompt": "{medicineName}. ਆਪਣੀ ਦਵਾਈ ਲਓ।"
+  }
+}

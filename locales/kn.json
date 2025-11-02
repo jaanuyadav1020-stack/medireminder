@@ -1,0 +1,93 @@
+
+{
+  "loginPage": {
+    "title": "ಮೆಡಿರೆಮ್‌ಗೆ ಸುಸ್ವಾಗತ",
+    "subtitle": "ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಔಷಧಿ ಸಹಾಯಕ.",
+    "emailLabel": "ಇಮೇಲ್ ವಿಳಾಸ",
+    "emailPlaceholder": "john@doe.com",
+    "passwordLabel": "ಪಾಸ್‌ವರ್ಡ್",
+    "passwordPlaceholder": "ಪಾಸ್‌ವರ್ಡ್",
+    "signInButton": "ಸೈನ್ ಇನ್ ಮಾಡಿ",
+    "or": "ಅಥವಾ",
+    "guestButton": "ಅತಿಥಿಯಾಗಿ ಮುಂದುವರಿಸಿ",
+    "alertMissingCredentials": "ದಯವಿಟ್ಟು ಇಮೇಲ್ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್ ನಮೂದಿಸಿ."
+  },
+  "header": {
+    "greeting": "ನಮಸ್ಕಾರ, {name}",
+    "logoutButton": "ಲಾಗ್ ಔಟ್"
+  },
+  "dashboard": {
+    "title": "ಇಂದಿನ ವೇಳಾಪಟ್ಟಿ",
+    "addMedicineAria": "ಹೊಸ ಔಷಧಿ ಸೇರಿಸಿ"
+  },
+  "medicineList": {
+    "emptyTitle": "ಯಾವುದೇ ಔಷಧಿಗಳನ್ನು ನಿಗದಿಪಡಿಸಲಾಗಿಲ್ಲ",
+    "emptySubtitle": "ಪ್ರಾರಂಭಿಸಲು '+' ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ.",
+    "takenAria": "ತೆಗೆದುಕೊಂಡಂತೆ ಗುರುತಿಸಿ",
+    "missedAria": "ತಪ್ಪಿದಂತೆ ಗುರುತಿಸಿ",
+    "editAria": "ಔಷಧಿ ಸಂಪಾದಿಸಿ",
+    "deleteAria": "ಔಷಧಿ ಅಳಿಸಿ"
+  },
+  "adherence": {
+    "Pending": "ಬಾಕಿ ಉಳಿದಿದೆ",
+    "Taken": "ತೆಗೆದುಕೊಳ್ಳಲಾಗಿದೆ",
+    "Missed": "ತಪ್ಪಿಹೋಗಿದೆ",
+    "chartTitle": "ಕಳೆದ 7 ದಿನಗಳ ಅನುಸರಣೆ",
+    "tooltipTaken": "ತೆಗೆದುಕೊಳ್ಳಲಾಗಿದೆ",
+    "tooltipMissed": "ತಪ್ಪಿಹೋಗಿದೆ",
+    "tooltipPending": "ಬಾಕಿ ಉಳಿದಿದೆ",
+    "tooltipNotScheduled": "ನಿಗದಿಪಡಿಸಲಾಗಿಲ್ಲ"
+  },
+  "frequency": {
+    "Daily": "ದೈನಂದಿನ",
+    "Weekly": "ವಾರಕ್ಕೊಮ್ಮೆ"
+  },
+  "addMedicineModal": {
+    "titleEdit": "ಔಷಧಿ ಸಂಪಾದಿಸಿ",
+    "titleAdd": "ಹೊಸ ಔಷಧಿ ಸೇರಿಸಿ",
+    "gallery": "ಗ್ಯಾಲರಿ",
+    "camera": "ಕ್ಯಾಮೆರಾ",
+    "ocrLoading": "ಗುರುತಿಸಲಾಗುತ್ತಿದೆ...",
+    "ocrButton": "AI ಯೊಂದಿಗೆ ಗುರುತಿಸಿ",
+    "ocrErrorPhoto": "ದಯವಿಟ್ಟು ಮೊದಲು ಫೋಟೋ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.",
+    "confirmOcrTitle": "AI ಫಲಿತಾಂಶವನ್ನು ದೃಢೀಕರಿಸಿ",
+    "confirmOcrSubtitle": "ದೃಢೀಕರಿಸುವ ಮೊದಲು ದಯವಿಟ್ಟು ಕೆಳಗೆ ಗುರುತಿಸಲಾದ ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಸಂಪಾದಿಸಿ.",
+    "nameLabel": "ಔಷಧದ ಹೆಸರು",
+    "descriptionLabel": "ವಿವರಣೆ",
+    "discard": "ತಿರಸ್ಕರಿಸಿ",
+    "confirmAndUse": "ದೃಢೀಕರಿಸಿ ಮತ್ತು ಬಳಸಿ",
+    "descriptionAILabel": "ವಿವರಣೆ (AI-ಸಹಾಯದಿಂದ)",
+    "descriptionPlaceholder": "ಉದಾ. ಅಧಿಕ ರಕ್ತದೊತ್ತಡಕ್ಕೆ ಚಿಕಿತ್ಸೆ ನೀಡಲು ಬಳಸಲಾಗುತ್ತದೆ.",
+    "timeLabel": "ಸಮಯ",
+    "frequencyLabel": "ಆವರ್ತನ",
+    "dayOfWeekLabel": "ವಾರದ ದಿನ",
+    "alertNameEmpty": "ಔಷಧದ ಹೆಸರು ಖಾಲಿಯಾಗಿರಲು ಸಾಧ್ಯವಿಲ್ಲ.",
+    "cancel": "ರದ್ದುಮಾಡಿ",
+    "save": "ಉಳಿಸಿ",
+    "saving": "ಉಳಿಸಲಾಗುತ್ತಿದೆ...",
+    "suggestionLoading": "ಸಲಹೆಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ...",
+    "suggestionPrompt": "ನಿಮ್ಮ ಪ್ರಕಾರ: ",
+    "timePresetMorning": "ಬೆಳಿಗ್ಗೆ",
+    "timePresetNoon": "ಮಧ್ಯಾಹ್ನ",
+    "timePresetEvening": "ಸಂಜೆ",
+    "timePresetNight": "ರಾತ್ರಿ"
+  },
+  "notificationModal": {
+    "title": "ನಿಮ್ಮ ಔಷಧಿಯ ಸಮಯ!",
+    "subtitle": "ಸಮಯ {time}. ದಯವಿಟ್ಟು ತೆಗೆದುಕೊಳ್ಳಿ:",
+    "confirmButton": "ನಾನು ತೆಗೆದುಕೊಂಡಿದ್ದೇನೆ",
+    "snoozeButton": "ಸ್ನೂಜ್ (15 ನಿಮಿಷ)",
+    "skipButton": "ಈಗ ಸದ್ಯಕ್ಕೆ ಬಿಟ್ಟುಬಿಡಿ"
+  },
+  "serviceWorker": {
+    "notificationTitle": "ಜ್ಞಾಪನೆ: {medicineName}",
+    "notificationBody": "ನಿಮ್ಮ ಡೋಸ್‌ನ ಸಮಯವಾಗಿದೆ: {medicineDescription}",
+    "notificationBodyDefaultDescription": "ವಿವರಗಳಿಗಾಗಿ ಅಪ್ಲಿಕೇಶನ್ ಪರಿಶೀಲಿಸಿ.",
+    "actionTake": "ನಾನು ತೆಗೆದುಕೊಂಡಿದ್ದೇನೆ",
+    "actionSnooze": "ಸ್ನೂಜ್ (15 ನಿಮಿಷ)",
+    "actionSkip": "ಈಗ ಸದ್ಯಕ್ಕೆ ಬಿಟ್ಟುಬಿಡಿ"
+  },
+  "voiceReminder": {
+    "prompt": "{medicineName}. ನಿಮ್ಮ ಔಷಧಿ ತೆಗೆದುಕೊಳ್ಳಿ."
+  }
+}

@@ -1,0 +1,93 @@
+
+{
+  "loginPage": {
+    "title": "میڈیریم میں خوش آمدید",
+    "subtitle": "آپ کا ذاتی ادویات کا معاون۔",
+    "emailLabel": "ای میل اڈریس",
+    "emailPlaceholder": "john@doe.com",
+    "passwordLabel": "پاس ورڈ",
+    "passwordPlaceholder": "پاس ورড",
+    "signInButton": "سائن ان کریں",
+    "or": "یا",
+    "guestButton": "مہمان کے طور پر جاری رکھیں",
+    "alertMissingCredentials": "براہ کرম ای میل اور پاس ورڈ درج کریں۔"
+  },
+  "header": {
+    "greeting": "ہیلو، {name}",
+    "logoutButton": "لاگ آوٹ"
+  },
+  "dashboard": {
+    "title": "آج کا شیڈول",
+    "addMedicineAria": "نئی دوا شامل کریں"
+  },
+  "medicineList": {
+    "emptyTitle": "کوئی دوا شیڈول نہیں ہے",
+    "emptySubtitle": "شروع کرنے کے لیے '+' بٹن پر کلک کریں۔",
+    "takenAria": "لی گئی کے طور پر نشان زد کریں",
+    "missedAria": "چھوٹ گئی کے طور پر نشان زد کریں",
+    "editAria": "دوا میں ترمیم کریں",
+    "deleteAria": "دوا حذف کریں"
+  },
+  "adherence": {
+    "Pending": "زیر التواء",
+    "Taken": "لے لی",
+    "Missed": " چھوٹ گئی",
+    "chartTitle": "پچھلے 7 دنوں کی پابندی",
+    "tooltipTaken": "لے لی",
+    "tooltipMissed": " چھوٹ گئی",
+    "tooltipPending": "زیر التواء",
+    "tooltipNotScheduled": "شیڈول نہیں ہے"
+  },
+  "frequency": {
+    "Daily": "روزانہ",
+    "Weekly": "ہفتہ وار"
+  },
+  "addMedicineModal": {
+    "titleEdit": "دوا میں ترمیم کریں",
+    "titleAdd": "نئی دوا شامل کریں",
+    "gallery": "گیلری",
+    "camera": "کیمرہ",
+    "ocrLoading": "پہچان رہا ہے...",
+    "ocrButton": "AI سے پہچانیں",
+    "ocrErrorPhoto": "براہ کرم پہلے ایک تصویر اپ لوڈ کریں۔",
+    "confirmOcrTitle": "AI نتیجے کی تصدیق کریں",
+    "confirmOcrSubtitle": "تصدیق کرنے سے پہلے براہ کرم نیچے دی گئی پہچانی گئی تفصیلات کا جائزہ لیں اور ان میں ترمیم کریں۔",
+    "nameLabel": "دوا کا نام",
+    "descriptionLabel": "تفصیل",
+    "discard": "مسترد کریں",
+    "confirmAndUse": "تصدیق کریں اور استعمال کریں",
+    "descriptionAILabel": "تفصیل (AI کی مدد سے)",
+    "descriptionPlaceholder": "جیسے، ہائی بلڈ پریشر کے علاج کے لیے استعمال کیا جاتا ہے۔",
+    "timeLabel": "وقت",
+    "frequencyLabel": "تعدد",
+    "dayOfWeekLabel": "ہفتے کا دن",
+    "alertNameEmpty": "دوا کا نام خالی نہیں ہو सकता۔",
+    "cancel": "منسوخ کریں",
+    "save": "محفوظ کریں",
+    "saving": "محفوظ ہو رہا ہے...",
+    "suggestionLoading": "تجاویز کے لیے جانچ ہو رہی ہے...",
+    "suggestionPrompt": "کیا آپ کا مطلب تھا: ",
+    "timePresetMorning": "صبح",
+    "timePresetNoon": "دوپہر",
+    "timePresetEvening": "شام",
+    "timePresetNight": "رات"
+  },
+  "notificationModal": {
+    "title": "آپ کی دوا کا وقت!",
+    "subtitle": "وقت {time} ہے۔ براہ کرم لے لیں:",
+    "confirmButton": "میں نے لے لی ہے",
+    "snoozeButton": "اسنوز (15 منٹ)",
+    "skipButton": "ابھی کے لیے چھوڑ دیں"
+  },
+  "serviceWorker": {
+    "notificationTitle": "یاد دہانی: {medicineName}",
+    "notificationBody": "آپ کی خوراک کا وقت ہو گیا ہے: {medicineDescription}",
+    "notificationBodyDefaultDescription": "تفصیلات کے لیے ایپ چیک کریں۔",
+    "actionTake": "میں نے لے لی ہے",
+    "actionSnooze": "اسنوز (15 منٹ)",
+    "actionSkip": "ابھی کے لیے چھوڑ دیں"
+  },
+  "voiceReminder": {
+    "prompt": "{medicineName}. اپنی دوا لیں۔"
+  }
+}
