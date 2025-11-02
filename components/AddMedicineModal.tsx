@@ -70,14 +70,9 @@ const AddMedicineModal: React.FC<AddMedicineModalProps> = ({ medicine, onClose, 
         const photoParts = photo.split(',');
         if (photoParts.length !== 2) throw new Error("Invalid image data");
         
-        const meta = photoParts[0];
         const base64Data = photoParts[1];
-
-        const mimeTypeMatch = meta.match(/:(.*?);/);
-        if (!mimeTypeMatch || mimeTypeMatch.length < 2) throw new Error("Could not determine image mime type");
-        const mimeType = mimeTypeMatch[1];
         
-        const { name: recognizedName, description: recognizedDescription } = await recognizeMedicineFromImage(base64Data, mimeType);
+        const { name: recognizedName, description: recognizedDescription } = await recognizeMedicineFromImage(base64Data);
         setOcrResult({ name: recognizedName, description: recognizedDescription });
     } catch (error) {
         setOcrError(error instanceof Error ? error.message : "An unknown error occurred.");
